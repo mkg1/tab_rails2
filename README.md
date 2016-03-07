@@ -7,7 +7,7 @@ The view does an if params[:name] check. This is a code smell. How could you do 
 
 What is the best approach to storing environment variables (like a Weather Underground Key)? Why?
 
-=> These should be stored locally, in the bash profile for example, so that they can be referenced anywhere, but also to protect sensitive info like keys and pws.
+=> These should be stored locally, in the bash profile for example, so that they can be referenced anywhere, but also to protect sensitive info like keys and pws. -> (string interpolation + ENV[])
 
 Do you ever run migrations on the test database?
-=> I don't think you need to bc the fixtures are always readily available for testing so no migration is needed, since you're not really ever changing a database.
+=> I don't think you need to bc the fixtures are always readily available for testing so no migration is needed, since you're not really ever changing a database. Answer: Your db migrates up and down behind the scenes when you run tests, so sort of...
