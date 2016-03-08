@@ -17,4 +17,4 @@ Do you ever run migrations on the test database?
 
 This migration was probably pretty dissatisfying to create. How would you change your migration to make the survey more flexible in the future?
 
-=>Every 4 of the 5 fields in the migration were booleans, which limits the type of responses the form can take. 
+=>4 of the 5 fields in the migration were booleans, which limits the type of responses the form can take. 
